@@ -19,7 +19,7 @@ python MergeSort_test.py
 
 El programa debe mostrar una lista ordenada y un mensaje indicando que el unit test pasó correctamente.
 
-## Estructura del proyecto
+## Estructura del ejercicio
 
 ```
 .
