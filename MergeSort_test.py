@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from merge_of_two_lists import merge_two_lists
 
 def merge_sort(arr):
@@ -9,10 +8,10 @@ def merge_sort(arr):
     left = arr[:mid]
     right = arr[mid:]
 
-    left_sorted = merge_sort(left)
-    right_sorted = merge_sort(right)
-
-    return merge_two_lists(left_sorted, right_sorted)
+    return merge_two_lists(
+        merge_sort(left),
+        merge_sort(right)
+    )
 
 unsorted_list = [8, 4, 1, 3, 7, 2, 5, 6]
 expected = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -25,13 +24,3 @@ if result == expected:
     print("Test PASÓ")
 else:
     print("Test FALLÓ")
-=======
-unsorted_list = [8, 4, 1, 3, 7, 2, 5, 6]
-
-sorted_list = [1, 2, 3, 4, 5, 6, 7, 8]
-
-if unsorted_list == sorted_list:
-    print("La lista está ordenada")
-else:
-    print("La lista no está ordenada")
->>>>>>> cde27b907689d521feb74f25cdd504a014fe0fd9
