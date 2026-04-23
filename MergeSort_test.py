@@ -13,18 +13,16 @@ def merge_sort(arr):
 
     return merge_two_lists(left_sorted, right_sorted)
 
+
+# prueba simple
 unsorted_list = [8, 4, 1, 3, 7, 2, 5, 6]
+expected = [1, 2, 3, 4, 5, 6, 7, 8]
 
-print(unsorted_list)
+result = merge_sort(unsorted_list)
 
-sorted_list = [1, 2, 3, 4, 5, 6, 7, 8]
+print("Resultado:", result)
 
-unsorted_list = merge_sort(unsorted_list)
-
-print(unsorted_list)
-
-if unsorted_list == sorted_list:
-    print("La lista está ordenada")
+if result == expected:
+    print("Test PASÓ")
 else:
-    print("La lista no está ordenada")
-
+    print("Test FALLÓ")
