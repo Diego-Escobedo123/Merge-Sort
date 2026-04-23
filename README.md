@@ -1,6 +1,6 @@
 # Merge Sort
 
-Este proyecto implementa el algoritmo Merge Sort en Python.
+Este ejercicio implementa el algoritmo Merge Sort en Python.
 
 ## Clonar el repositorio
 
